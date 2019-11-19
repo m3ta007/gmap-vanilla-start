@@ -3,7 +3,7 @@ export function loadMapScript(libraries: string, c: Function): void {
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.src =
-      "https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY_HERE>";
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyD7fc4-ZOHQsUGr7cELBHQ65mEc_QPcLQI";
     if (libraries && libraries.length > 0) {
       script.src = script.src + "&libraries=" + libraries;
     }

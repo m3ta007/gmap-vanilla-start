@@ -56,6 +56,9 @@ export function placesSearch(map: google.maps.Map) {
           ""
       ].join(" ");
     }
+
+    let opening_hours = place.opening_hours ? place.opening_hours.open_now : "";
+    let rating = place.rating ? place.rating.toString() : "";
     (document.getElementById("place-icon") as HTMLImageElement).src =
       place.icon;
     (document.getElementById("place-name") as HTMLSpanElement).textContent =
@@ -63,6 +66,12 @@ export function placesSearch(map: google.maps.Map) {
     (document.getElementById(
       "place-address"
     ) as HTMLSpanElement).textContent = address;
+    (document.getElementById(
+      "opening-hours"
+    ) as HTMLSpanElement).textContent = opening_hours ? "Open Now" : "Closed";
+    (document.getElementById(
+      "rating"
+    ) as HTMLSpanElement).textContent = rating ? `Rating is: ${rating}` : "Not rated yet";
 
     infowindow.open(map, marker);
   });

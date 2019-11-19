@@ -118,8 +118,9 @@ function calculateAndDisplayRoute(
                   "distance"
                 ) as HTMLSpanElement).textContent =
                   response.rows[0].elements[0].distance.text +
-                  " " +
-                  response.rows[0].elements[0].duration.text;
+                  ". It should take about " +
+                  response.rows[0].elements[0].duration.text +
+                  " to drive there.";
               }
             }
           );

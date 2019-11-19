@@ -23,6 +23,8 @@ function copy() {
       "app/**/*.jpg",
       "app/**/*.png",
       "app/**/*.json",
+      "app/**/*.geojson",
+      "app/**/*.svg",
       "app/assets/markerclusterer.js",
       "./service-worker.js"
     ])

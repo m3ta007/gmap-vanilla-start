@@ -27,6 +27,21 @@ function initMap() {
      *
      * https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/reference/map#MapOptions
      */
+    backgroundColor: '#00ced1',
+    keyboardShortcuts: true,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      position: google.maps.ControlPosition.TOP_LEFT
+    },
+    scaleControl: true,
+    scrollwheel: true,
+    streetViewControl: false,
+    zoom: 11,
+    zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.LARGE,
+      position: google.maps.ControlPosition.RIGHT_BOTTOM
+    },
   });
   FunWithMaps(map);
 }
